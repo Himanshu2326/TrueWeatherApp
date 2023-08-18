@@ -24,15 +24,15 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.get('/index', (req, res) => {
+app.get('/index.hbs', (req, res) => {
     res.render('index')
 })
 
-app.get('/about', (req, res) => {
+app.get('/about.hbs', (req, res) => {
     res.render('about')
 })
 
-app.get('/weather', (req, res) => {
+app.get('/weather.hbs', (req, res) => {
     res.render('weather')
 })
 
