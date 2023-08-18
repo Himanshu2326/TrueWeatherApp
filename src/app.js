@@ -21,23 +21,23 @@ app.use(express.static(public))
 // Routing :-
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index.hbs')
 })
 
 app.get('/index.hbs', (req, res) => {
-    res.render('index')
+    res.render('index.hbs')
 })
 
 app.get('/about.hbs', (req, res) => {
-    res.render('about')
+    res.render('about.hbs')
 })
 
 app.get('/weather.hbs', (req, res) => {
-    res.render('weather')
+    res.render('weather.hbs')
 })
 
 app.get('*', (req, res) => {
-    res.render('404')
+    res.render('404.hbs')
 })
 
 
