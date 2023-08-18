@@ -45,8 +45,14 @@ submitBtn.addEventListener('click', getWeatherInfo);
 // Day And Day Area:-
 
 let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let month = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+
+
+let mon = document.querySelector('#mon')
+let date = document.querySelector('#date')
 
 /*Sample Code*/
 let d = new Date();
 day.innerHTML = dayNames[d.getDay()];
 date.innerHTML = d.getDate();
+mon.innerHTML =  month[d.getMonth()];

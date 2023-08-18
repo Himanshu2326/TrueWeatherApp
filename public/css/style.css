@@ -21,7 +21,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #e1e5ff;
+    background: #edf0fe;
 }
 
 html {
@@ -31,7 +31,7 @@ html {
 
 .main_menu {
     box-shadow: 0px 0px 0px 4px #ff6b21;
-    background: #e1e5ff;
+    background: #edf0fe;
     margin-bottom: 3rem;
 
 }
