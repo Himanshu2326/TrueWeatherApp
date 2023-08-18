@@ -195,7 +195,7 @@ figure {
     font-size: 2rem;
     background: radial-gradient(#e1e5ff,#e1e5ff);
     border: none;
-    color: #f8f9fa;
+    color: #edf0fe;
 
 }
 
@@ -246,7 +246,7 @@ figure {
     font-family: 'Poppins', sans-serif !important;
     background: rgba(232, 0, 255, 0.11);
     backdrop-filter: blur(10px);
-    background: linear-gradient(45deg , #e1e5ff 80%, #ff6f22 18%);
+    background: linear-gradient(45deg , #edf0fe 80%, #ff6f22 18%);
 }
 
 .top_layer {
