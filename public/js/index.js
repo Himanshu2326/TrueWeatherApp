@@ -1,5 +1,4 @@
 
-console.log('Chal Raha Hu mai');
 
 // Weather API Area:-
 
@@ -15,14 +14,13 @@ const getWeatherInfo = async (event) => {
     event.preventDefault();
     
     let cityVal = cityName.value;
-    console.log(`Your City is :${cityVal}`)
     if (cityVal == "") {
         city_name.innerText = 'Please Enter City Name';
         data_hide.classList.add('data_hide')
     }
     else {
         try {
-            let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=73c604d1c335623b5f574390a02b4485`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=73c604d1c335623b5f574390a02b4485`
             let response = await fetch(url);
             let data = await response.json();
             let arrData = [data];
@@ -50,7 +48,5 @@ let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 
 /*Sample Code*/
 let d = new Date();
-console.log(d);
-console.log("Day Name: " + dayNames[d.getDay()])
 day.innerHTML = dayNames[d.getDay()];
 date.innerHTML = d.getDate();
