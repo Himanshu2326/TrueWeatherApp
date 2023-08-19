@@ -43,7 +43,7 @@ const getWeatherInfo = async (event) => {
             else if (Weather == "Thunderstrom") {
                 temp_status.innerHTML = `<i class="fa-solid fa-cloud-bolt"></i>`
             }
-            else if (Weather == "Smoke") {
+            else if (Weather == "Smoke" || Weather == "Mist") {
                 temp_status.innerHTML = `<i class="fa-solid fa-smog"></i>`
             }
             else if (Weather == "Drizzle") {
