@@ -12,7 +12,7 @@ let temp_status = document.getElementById('temp_status');
 
 const getWeatherInfo = async (event) => {
     event.preventDefault();
-    
+
     let cityVal = cityName.value;
     if (cityVal == "") {
         city_name.innerText = 'Please Enter City Name';
@@ -24,28 +24,49 @@ const getWeatherInfo = async (event) => {
             let response = await fetch(url);
             let data = await response.json();
             let arrData = [data];
-            
+
             city_name.innerHTML = `${arrData[0].name},${arrData[0].sys.country}`;
             temp.innerHTML = arrData[0].main.temp;
-            temp_status.innerHTML = arrData[0].weather[0].main;
+
+            //? Weather Icon 
+            let Weather = arrData[0].weather[0].main;
+
+            if (Weather == "Clouds") {
+                temp_status.innerHTML = `<i class="fa-solid fa-cloud"></i> `
+            }
+            else if (Weather == "Clear") {
+                temp_status.innerHTML = `<i class="fa-solid fa-cloud-sun"></i>`
+            }
+            else if (Weather == "Rain") {
+                temp_status.innerHTML = `<i class="fa-solid fa-cloud-showers-heavy"></i>`
+            }
+            else if(Weather == "Thunderstrom"){
+                temp_status.innerHTML = `<i class="fa-solid fa-cloud-bolt"></i>`
+            }
+            else if(Weather == "Mist"){
+                temp_status.innerHTML = `<i class="fa-solid fa-smog"></i>`
+            }
+
             data_hide.classList.remove('data_hide');
             cityName.value = "";
+
 
         }
         catch {
             city_name.innerText = 'Please Enter A Valid City Name';
             data_hide.classList.add('data_hide')
         }
-        
+
     }
 }
+
 
 submitBtn.addEventListener('click', getWeatherInfo);
 
 // Day And Day Area:-
 
 let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let month = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+let month = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 
 let mon = document.querySelector('#mon')
@@ -55,4 +76,4 @@ let date = document.querySelector('#date')
 let d = new Date();
 day.innerHTML = dayNames[d.getDay()];
 date.innerHTML = d.getDate();
-mon.innerHTML =  month[d.getMonth()];
+mon.innerHTML = month[d.getMonth()];
