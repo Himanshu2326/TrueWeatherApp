@@ -38,13 +38,19 @@ const getWeatherInfo = async (event) => {
                 temp_status.innerHTML = `<i class="fa-solid fa-cloud-sun"></i>`
             }
             else if (Weather == "Rain") {
-                temp_status.innerHTML = `<i class="fa-solid fa-cloud-showers-heavy"></i>`
+                temp_status.innerHTML = ` <i class="fa-solid fa-cloud-rain"></i>`
             }
-            else if(Weather == "Thunderstrom"){
+            else if (Weather == "Thunderstrom") {
                 temp_status.innerHTML = `<i class="fa-solid fa-cloud-bolt"></i>`
             }
-            else if(Weather == "Mist"){
+            else if (Weather == "Smoke") {
                 temp_status.innerHTML = `<i class="fa-solid fa-smog"></i>`
+            }
+            else if (Weather == "Drizzle") {
+                temp_status.innerHTML = `<i class="fa-solid fa-cloud-showers-heavy"></i>`
+            }
+            else {
+                temp_status.innerHTML = Weather;
             }
 
             data_hide.classList.remove('data_hide');
