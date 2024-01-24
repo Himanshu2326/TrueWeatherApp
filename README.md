@@ -31,6 +31,7 @@ https://trueweatherapp.onrender.com/
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 - NodeJs
 - Handlebars
 
