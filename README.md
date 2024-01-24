@@ -1,3 +1,4 @@
+
 # True Weather App 
 
 TrueWeatherApp Gives The Exact Weather of Any City Or Country Around The World.
@@ -14,6 +15,24 @@ https://trueweatherapp.onrender.com/
 - Exact Weather Details.
 - Get Any City Weather Info.
 - Interactive User Interface.
+- 
+
+
+
+## API Reference
+
+#### Open Weather API
+
+
+
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- NodeJs
+- Handlebars
 
 
 
