@@ -15,7 +15,7 @@ https://trueweatherapp.onrender.com/
 - Exact Weather Details.
 - Get Any City Weather Info.
 - Interactive User Interface.
-- 
+
 
 
 
