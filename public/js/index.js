@@ -1,5 +1,16 @@
 
 
+//? Loader:-
+
+let loader = document.querySelector('.loader');
+
+let showLoader = () => {
+
+    loader.style.display = "none"
+
+}
+
+
 // Weather API Area:-
 
 let cityName = document.getElementById('cityName');
