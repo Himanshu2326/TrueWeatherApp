@@ -29,6 +29,24 @@ html {
     /* 1rem = 10px */
 }
 
+.loader{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: white;
+    z-index: 10;
+
+}
+
+.loader img{
+    height: 80px;
+}
+
+
 .main_menu {
     box-shadow: 0px 0px 0px 4px #ff6b21;
     background: #edf0fe;
@@ -167,7 +185,8 @@ html {
 
 .img-fluid {
     max-width: 300px;
-    box-shadow: -4px -4px 0px 2px #000b8e;;
+    box-shadow: -1px -1px 1px 3px #ff7500;
+    border-radius: 10px;
 }
 
 figure {
